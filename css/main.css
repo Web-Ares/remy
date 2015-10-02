@@ -205,3 +205,11 @@ input.textbox{
     border-bottom: 2px solid #fae897;
 }
 /* --------------- /btn --------------- */
+
+/* --------------- social --------------- */
+.social{
+    position: absolute;
+    bottom: 5px;
+    left:20px;
+}
+/* --------------- /social --------------- */
