@@ -148,6 +148,46 @@ span{
     font-weight: 700;
     display: none;
 }
+.works span {
+    text-align: right;
+}
+
+.works{
+    display: none;
+    text-align: right;
+    position: relative;
+    width: 697px;
+}
+.works__item{
+    width: 224px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.works_item span{
+    text-align: right;
+    font-size:15px;
+}
+.works__item h3{
+    color:#fdd733;
+    font-size: 21px;
+    font-weight: 700;
+}
+.works_bottom{
+    position: relative;
+    margin-top: -10px;
+    width: 204px;
+    margin-right: -3px;
+    height: 54px;
+    background: #dbbb2e;
+}
+.works_bottom div{
+    position: relative;
+    margin-top: -10px;
+    right: 3px;
+    width: 204px;
+    height: 54px;
+    background: #fdd600;
+}
 
 
 /* --------------- feedback --------------- */
@@ -219,3 +259,56 @@ input.textbox{
     color: #0ea0c0;
 }
 /* --------------- /aside --------------- */
+@media (min-width: 1024px) {
+.desktop-title{
+    width: 700px;
+    display: block;
+}
+.works{
+    display: block;
+}
+.site{max-width: 1024px;}
+.left{
+    text-align: center;
+    margin-left: 21px;
+    margin-top: 10px;
+    display:block;
+    vertical-align: top;
+    width: 700px;
+    font-size: 51px;
+   }
+.right {
+    text-align: center;
+    display: block;
+    vertical-align: top;
+    width: 700px;
+    font-size: 71px;
+
+}
+.circle-items{
+    width: 700px;
+    text-align: center;
+}
+    .sell{
+        width: 700px;
+        font-size:39px;
+    }
+    .sell_1{
+        display: none;
+    }
+    .circle{
+        width: 125px;
+        height: 125px;
+        font-size: 20px;
+    }
+    .circle div{
+        width: 125px;
+        height: 125px;
+    }
+    .circle div span{
+        height: 120px;
+        width: 108px;
+        padding-right: 11px;
+
+    }
+}
