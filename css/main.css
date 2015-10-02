@@ -32,20 +32,24 @@
 /* --------------- fonts --------------- */
 @font-face {
     font-family: "Font Name";
-    src: url("../fonts/font.woff") format("woff");
+    src: url("fonts/almoni-dl-aaa-700 (1).woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 /* --------------- /fonts --------------- */
-
+body{
+    font-family: 'AlmoniDLAAA', 'sans-serif';
+    background: url("../img/mainbg.jpg")no-repeat center;
+}
 /* --------------- site --------------- */
 .site {
     min-height: 100%;
-    min-width: 1000px;
+    max-width: 320px;
+    margin: 0 auto;
     overflow: hidden;
     position: relative;
     z-index: 1;
-    background: url("../img/mainbg.jpg")no-repeat center;
+
 }
 .site:after {
     content: '';
@@ -61,7 +65,6 @@
 
 .site__header {
     position: relative;
-    height: 100px;
     z-index: 3;
 
 }
@@ -79,16 +82,79 @@
 }
 /* --------------- /site --------------- */
 
+span{
+    text-align: center;
+    display: block;
+    font-weight: 700;
+}
 .sell{
+    margin-top: 7px;
+    line-height: 19px;
+    color: #0ea0c0;
     font-size: 20px;
 }
-
-/* --------------- mobile --------------- */
-.mobile{
-    max-width: 320px;
-    margin: 0 auto;
+.sell_1{
+    color: #043540;
+    line-height: 25px;
+    font-size: 30px;
+}
+.left{
+    margin-left: 21px;
+    margin-top: 10px;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: top;
+    width: 80px;
+    font-size: 23px;
+    color: #fdd733;
+}
+.right{
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: top;
+    width: 215px;
+    font-size: 57px;
+    color:#fdd733;
 
 }
+.circle{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 65px;
+    height: 65px;
+    background: #76c0cc;
+    border-radius: 50%;
+    padding-right: 3px;
+    margin-left: 2px;
+    font-size: 11px;
+    text-align: center;
+}
+.circle div{
+    right:4px;
+    width: 65px;
+    height: 65px;
+    background: #0ea0c0;
+    border-radius: 50%;
+}
+.circle-items{
+    text-align: center;
+}
+.circle div span{
+    color: #fff;
+    width: 60px;
+    height: 64px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.desktop-title{
+    color:#0ea0c0;
+    font-size: 58px;
+    font-weight: 700;
+    display: none;
+}
+/* --------------- mobile --------------- */
+
 /* --------------- /mobile --------------- */
 
 /* --------------- logo --------------- */
