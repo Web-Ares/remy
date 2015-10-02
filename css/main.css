@@ -19,24 +19,24 @@
 
 /* --------------- placeholder --------------- */
 ::-webkit-input-placeholder {
-    color: #000;
+    color: #0ea0c0;
 }
 :-moz-placeholder {
-    color: #000;
+    color: #0ea0c0;
 }
 .placeholder {
-    color: #000;
+    color: #0ea0c0;
 }
 /* --------------- /placeholder --------------- */
 
-/* --------------- fonts --------------- */
-@font-face {
-    font-family: "Font Name";
-    src: url("../fonts/font.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-/* --------------- /fonts --------------- */
+/*/!* --------------- fonts --------------- *!/*/
+/*@font-face {*/
+    /*font-family: "Font Name";*/
+    /*src: url("../fonts/font.woff") format("woff");*/
+    /*font-weight: normal;*/
+    /*font-style: normal;*/
+/*}*/
+/*/!* --------------- /fonts --------------- *!/*/
 
 /* --------------- site --------------- */
 .site {
@@ -81,13 +81,16 @@
 
 
 
-/* --------------- mobile --------------- */
-.mobile{
-    max-width: 320px;
-    margin: 0 auto;
-
+/* --------------- feedback --------------- */
+.feedback{
+color:#043540;
+font-size: 15px;
 }
-/* --------------- /mobile --------------- */
+/* --------------- /feedback --------------- */
+
+
+
+
 
 /* --------------- logo --------------- */
 .logo {
@@ -96,3 +99,45 @@
     left: 0;
 }
 /* --------------- /logo --------------- */
+
+/* --------------- form --------------- */
+form{
+    margin:0 auto;
+    max-width:186px;
+    border-radius:5px;
+
+    /*-webkit-box-shadow:  0 0 15px 0 rgba(0, 0, 0, .45);*/
+    /*box-shadow:  0 0 15px 0 rgba(0, 0, 0, .45);*/
+}
+/* --------------- /form --------------- */
+
+/* --------------- textbox --------------- */
+input.textbox{
+    background-color: #c6dadc;
+    font-size: 11px;
+    height: 22px;
+    margin-bottom: 2px;
+    width: 100%;
+    color: #0ea0c0;
+    border:none;
+    border-top: 2px solid #dbe7e9;
+    border-bottom: 2px solid #dbe7e9;
+    padding: 0 8px;
+}
+/* --------------- /textbox --------------- */
+
+/* --------------- contact --------------- */
+.contact{
+    height: 38px;
+}
+/* --------------- contact --------------- */
+
+.btn{
+    width: 100%;
+    background-color: #fdd733;
+    font-size: 28px;
+    color: #043540;
+    border-top: 2px solid #fae897;
+    border-bottom: 2px solid #fae897;
+}
+
