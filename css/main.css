@@ -324,15 +324,52 @@ input.contact{
     font-size: 33px;
     font-weight: 700;
     letter-spacing: 1px;
+    margin-bottom: 58px;
 }
 /* --------------- /feedback-contact --------------- */
 /* --------------- social-items --------------- */
 .social-items{
-top: 20px;
+    position: relative;
+    width: 160px;
+    margin: 0 auto 94px;
 }
-.social-items a{
+.social-items a {
+    display: inline-block;
+    height: 36px;
+    width: 38px;
+    margin-right: 16px;
+    background: url("../img/socialsprite.png");
+}
+.social-items a:first-child{
+    margin-right: 0;
+    margin-left: 5px;
+}
 
+.social-items .social-f{
+    background-position: 0 0;
 }
+.social-items .social-ph{
+    background-position: -60px 0;
+}
+.social-items .social-home{
+    background-position: 37px 0;
+}
+.social-items .social-f:hover{
+    background-position: 0 36px;
+}
+.social-items .social-ph:hover{
+    background-position: -60px 36px;
+}
+.social-items .social-home:hover{
+    background-position: 37px 36px;
+}
+/* --------------- feedback-logo --------------- */
+.feedback-logo img{
+    height: 57px;
+    width: 156px;
+}
+/* --------------- /feedback-logo --------------- */
+
 /* --------------- /social-items --------------- */
 @media (min-width: 1024px) {
     .desktop-title{
