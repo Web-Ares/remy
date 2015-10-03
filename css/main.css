@@ -189,6 +189,25 @@ span{
     background: #fdd600;
 }
 
+/* --------------- aside --------------- */
+aside{
+    width: 285px;
+    float: left;
+    padding-top: 13px;
+}
+.aside span strong{
+    color: #0ea0c0;
+}
+.aside .feedback-block>strong{
+    color: #043540;
+    font-size: 40px;
+    margin: 0 auto;
+    display: block;
+    width: 196px;
+    line-height: 28px;
+    margin-top: -3px;
+}
+/* --------------- /aside --------------- */
 
 /* --------------- feedback --------------- */
 .feedback{
@@ -196,6 +215,29 @@ span{
     font-size: 15px;
 }
 /* --------------- /feedback --------------- */
+
+/* --------------- feedback-block --------------- */
+.feedback-block{
+    color: #fdd733;
+    font-size: 50px;
+    /* display: none; */
+    text-align: center;
+    margin-bottom: 17px;
+}
+/* --------------- /feedback-block --------------- */
+
+/* --------------- save-electricity --------------- */
+.save-electricity{
+    color: #043540;
+    font-size: 40px;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    line-height: 32px;
+    letter-spacing: 2px;
+    margin-bottom: -7px;
+}
+/* --------------- /save-electricity --------------- */
 
 /* --------------- logo --------------- */
 .logo {
@@ -208,7 +250,6 @@ span{
 form{
     margin:0 auto;
     max-width:186px;
-    border-radius:5px;
     margin-bottom: 15px;
 }
 /* --------------- /form --------------- */
@@ -226,10 +267,13 @@ input.textbox{
     border-bottom: 2px solid #dbe7e9;
     padding: 0 8px;
 }
+input.company{
+    display: none;
+}
 /* --------------- /textbox --------------- */
 
 /* --------------- contact --------------- */
-.contact{
+input.contact{
     height: 38px;
 }
 /* --------------- contact --------------- */
@@ -254,11 +298,7 @@ input.textbox{
 }
 /* --------------- /social --------------- */
 
-/* --------------- aside --------------- */
-.aside span>strong{
-    color: #0ea0c0;
-}
-/* --------------- /aside --------------- */
+
 @media (min-width: 1024px) {
 .desktop-title{
     width: 700px;
@@ -311,4 +351,50 @@ input.textbox{
         padding-right: 11px;
 
     }
+.content_block{
+    width: 700px;
+    display: inline-block;
+    float: right;
+}
+
+/* --------------- feedback --------------- */
+.feedback{
+    display: none;
+}
+/* --------------- /feedback --------------- */
+
+/* --------------- form --------------- */
+form{
+    margin:0 auto;
+    max-width:228px;
+    margin-bottom: 51px;
+}
+/* --------------- /form --------------- */
+
+/* --------------- textbox --------------- */
+input.textbox{
+    border: none;
+    font-size: 17px;
+    height: 26px;
+    padding: 0 10px;
+    margin-bottom: 5px;
+}
+input.company{
+    display: block;
+}
+/* --------------- /textbox --------------- */
+/* --------------- contact --------------- */
+input.contact{
+    height: 100px;
+}
+/* --------------- contact --------------- */
+/* --------------- btn --------------- */
+.btn{
+    border: none;
+    border-left: 2px solid #fae897;
+    border-right: 2px solid #fae897;
+    height: 43px;
+}
+/* --------------- /btn --------------- */
+
 }
