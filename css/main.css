@@ -75,6 +75,9 @@ body{
     width: 100%;
     height: 100px;
 }
+.site__content-wrap{
+    padding-top: 114px;
+}
 /* --------------- /site --------------- */
 
 span{
@@ -307,6 +310,22 @@ input.contact{
 }
 /* --------------- /social --------------- */
 
+/* --------------- feedback-title --------------- */
+.feedback-title{
+    color:#0ea0c0;
+    font-size: 36.5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+/* --------------- /feedback-title --------------- */
+/* --------------- feedback-contact --------------- */
+.feedback-contact{
+    color:#fdd733;
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+/* --------------- /feedback-contact --------------- */
 
 @media (min-width: 1024px) {
     .desktop-title{
