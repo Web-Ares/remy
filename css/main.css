@@ -192,8 +192,8 @@ span{
 /* --------------- aside --------------- */
 aside{
     width: 285px;
-    float: left;
     padding-top: 13px;
+    margin: 0 auto;
 }
 .aside span strong{
     color: #0ea0c0;
@@ -211,8 +211,11 @@ aside{
 
 /* --------------- feedback --------------- */
 .feedback{
-    color:#043540;
-    font-size: 15px;
+    color: #043540;
+    font-size: 15.2px;
+    letter-spacing: 0px;
+    word-spacing: 4px;
+    margin-bottom: 6px;
 }
 /* --------------- /feedback --------------- */
 
@@ -220,7 +223,7 @@ aside{
 .feedback-block{
     color: #fdd733;
     font-size: 50px;
-    /* display: none; */
+     display: none;
     text-align: center;
     margin-bottom: 17px;
 }
@@ -236,6 +239,7 @@ aside{
     line-height: 32px;
     letter-spacing: 2px;
     margin-bottom: -7px;
+    display: none;
 }
 /* --------------- /save-electricity --------------- */
 
@@ -244,13 +248,17 @@ aside{
     margin: 0 auto;
     text-align: center;
 }
+.logo img {
+    height: 35px;
+    width: 99px;
+}
 /* --------------- /logo --------------- */
 
 /* --------------- form --------------- */
 form{
     margin:0 auto;
     max-width:186px;
-    margin-bottom: 15px;
+    margin-bottom: 11px;
 }
 /* --------------- /form --------------- */
 
@@ -287,6 +295,7 @@ input.contact{
     color: #043540;
     border-top: 2px solid #fae897;
     border-bottom: 2px solid #fae897;
+    height: 32px;
 }
 /* --------------- /btn --------------- */
 
@@ -300,101 +309,128 @@ input.contact{
 
 
 @media (min-width: 1024px) {
-.desktop-title{
-    width: 700px;
-    display: block;
-}
-.works{
-    display: block;
-}
-.site{max-width: 1024px;}
-.left{
-    text-align: center;
-    margin-left: 21px;
-    margin-top: 10px;
-    display:block;
-    vertical-align: top;
-    width: 700px;
-    font-size: 51px;
-   }
-.right {
-    text-align: center;
-    display: block;
-    vertical-align: top;
-    width: 700px;
-    font-size: 71px;
-
-}
-.circle-items{
-    width: 700px;
-    text-align: center;
-}
-    .sell{
+    .desktop-title{
         width: 700px;
-        font-size:39px;
+        display: block;
     }
-    .sell_1{
+    .works{
+        display: block;
+    }
+    .site{max-width: 1024px;}
+    .left{
+        text-align: center;
+        margin-left: 21px;
+        margin-top: 10px;
+        display:block;
+        vertical-align: top;
+        width: 700px;
+        font-size: 51px;
+       }
+    .right {
+        text-align: center;
+        display: block;
+        vertical-align: top;
+        width: 700px;
+        font-size: 71px;
+
+    }
+    .circle-items{
+        width: 700px;
+        text-align: center;
+    }
+        .sell{
+            width: 700px;
+            font-size:39px;
+        }
+        .sell_1{
+            display: none;
+        }
+        .circle{
+            width: 125px;
+            height: 125px;
+            font-size: 20px;
+        }
+        .circle div{
+            width: 125px;
+            height: 125px;
+        }
+        .circle div span{
+            height: 120px;
+            width: 108px;
+            padding-right: 11px;
+
+        }
+    .content_block{
+        width: 700px;
+        display: inline-block;
+        float: right;
+    }
+
+    /* --------------- aside --------------- */
+    aside{
+        float: left;
+    }
+    /* --------------- aside --------------- */
+
+    /* --------------- feedback --------------- */
+    .feedback{
         display: none;
     }
-    .circle{
-        width: 125px;
-        height: 125px;
-        font-size: 20px;
+    /* --------------- /feedback --------------- */
+
+    /* --------------- form --------------- */
+    form{
+        margin:0 auto;
+        max-width:228px;
+        margin-bottom: 51px;
     }
-    .circle div{
-        width: 125px;
-        height: 125px;
+    /* --------------- /form --------------- */
+
+    /* --------------- textbox --------------- */
+    input.textbox{
+        border: none;
+        font-size: 17px;
+        height: 26px;
+        padding: 0 10px;
+        margin-bottom: 5px;
     }
-    .circle div span{
-        height: 120px;
-        width: 108px;
-        padding-right: 11px;
-
+    input.company{
+        display: block;
     }
-.content_block{
-    width: 700px;
-    display: inline-block;
-    float: right;
-}
+    /* --------------- /textbox --------------- */
+    /* --------------- contact --------------- */
+    input.contact{
+        height: 100px;
+    }
+    /* --------------- contact --------------- */
+    /* --------------- btn --------------- */
+    .btn{
+        border: none;
+        border-left: 2px solid #fae897;
+        border-right: 2px solid #fae897;
+        height: 43px;
+    }
+    /* --------------- /btn --------------- */
+    /* --------------- logo --------------- */
+    .logo img{
+        height: 95px;
+        width: 260px;
+    }
+    /* --------------- /logo --------------- */
 
-/* --------------- feedback --------------- */
-.feedback{
-    display: none;
-}
-/* --------------- /feedback --------------- */
-
-/* --------------- form --------------- */
-form{
-    margin:0 auto;
-    max-width:228px;
-    margin-bottom: 51px;
-}
-/* --------------- /form --------------- */
-
-/* --------------- textbox --------------- */
-input.textbox{
-    border: none;
-    font-size: 17px;
-    height: 26px;
-    padding: 0 10px;
-    margin-bottom: 5px;
-}
-input.company{
-    display: block;
-}
-/* --------------- /textbox --------------- */
-/* --------------- contact --------------- */
-input.contact{
-    height: 100px;
-}
-/* --------------- contact --------------- */
-/* --------------- btn --------------- */
-.btn{
-    border: none;
-    border-left: 2px solid #fae897;
-    border-right: 2px solid #fae897;
-    height: 43px;
-}
-/* --------------- /btn --------------- */
-
+    /* --------------- save-electricity --------------- */
+    .save-electricity{
+        display: block;
+    }
+    /* --------------- /save-electricity --------------- */
+    /* --------------- feedback-block --------------- */
+    .feedback-block{
+        display: block;
+    }
+    /* --------------- /feedback-block --------------- */
+    /* --------------- social --------------- */
+    .social{
+        display: none;
+    }
+    /* --------------- /social --------------- */
 }
