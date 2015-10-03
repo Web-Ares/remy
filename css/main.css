@@ -326,7 +326,14 @@ input.contact{
     letter-spacing: 1px;
 }
 /* --------------- /feedback-contact --------------- */
+/* --------------- social-items --------------- */
+.social-items{
+top: 20px;
+}
+.social-items a{
 
+}
+/* --------------- /social-items --------------- */
 @media (min-width: 1024px) {
     .desktop-title{
         width: 700px;
