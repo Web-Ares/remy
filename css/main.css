@@ -6,13 +6,25 @@
 
 /*
     main styles
-    version: 15.01.2013
+    version: 04.10.2015
 
     placeholder
 
     fonts
 
     site
+
+    works
+
+    circle
+
+    menu
+
+    aside
+
+    feedback
+
+    social
 
     logo
 */
@@ -52,12 +64,10 @@ body{
     background: url("../img/mainbg.jpg")no-repeat center;
     background-size: cover;
 }
-
 .site__content {
     position: relative;
     z-index: 2;
 }
-
 .site__header {
     position: relative;
 
@@ -69,17 +79,28 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    height: 100px;
+    height: 60px;
 }
 .site__footer-layout {
+    display: none;
     width: 100%;
-    height: 100px;
+    height: 60px;
 }
 .site__content-wrap{
     padding-top: 114px;
 }
 /* --------------- /site --------------- */
 
+/* --------------- desktop-title --------------- */
+.desktop-title{
+    color: #0ea0c0;
+    margin-top: 5px;
+    margin-bottom: 16px;
+    letter-spacing: 3px;
+    font-size: 58px;
+    font-weight: 700;
+    display: none;
+}
 span{
     text-align: center;
     display: block;
@@ -115,6 +136,9 @@ span{
     color:#fdd733;
 
 }
+/* --------------- /desktop-title --------------- */
+
+/* --------------- circle --------------- */
 .circle{
     display: inline-block;
     vertical-align: top;
@@ -145,26 +169,39 @@ span{
     display: table-cell;
     vertical-align: middle;
 }
-.desktop-title{
-    color:#0ea0c0;
-    font-size: 58px;
-    font-weight: 700;
-    display: none;
-}
+/* --------------- /circle --------------- */
+
+/* --------------- works --------------- */
 .works span {
     text-align: right;
+    height: 38px;
+    line-height: 11px;
+    font-size: 15px;
+    overflow: hidden;
+    width: 174px;
 }
-
+.works span:last-child{
+    display: table-cell;
+    height: 56px;
+    width: 200px;
+    vertical-align: middle;
+    text-align: center;
+    font-size:14px;
+}
 .works{
     display: none;
     text-align: right;
     position: relative;
+    margin-right: -15px;
     width: 697px;
 }
 .works__item{
     width: 224px;
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 6px;
+}
+.works__item:first-child{
+    margin-right: 0;
 }
 .works_item span{
     text-align: right;
@@ -191,6 +228,33 @@ span{
     height: 54px;
     background: #fdd600;
 }
+/* --------------- /works --------------- */
+
+/* --------------- menu --------------- */
+.menu{
+    display: none;
+    text-align: right;
+}
+.menu a{
+    font-size:21px;
+    color: #7ec9da;
+}
+.menu__items{
+    display: inline-block;
+}
+.menu__items:after{
+    content: "";
+    display: inline-block;
+    height: 19px;
+    width: 2px;
+    margin-left: 4px;
+    margin-right: 8px;
+    background: #043540;
+}
+.menu__items:last-child:after{
+    display: none;
+}
+/* --------------- /menu --------------- */
 
 /* --------------- aside --------------- */
 aside{
@@ -354,7 +418,6 @@ input.contact{
     margin-right: 0;
     margin-left: 5px;
 }
-
 .social-items .social-f{
     background-position: 0 0;
 }
@@ -381,19 +444,39 @@ input.contact{
 /* --------------- /feedback-logo --------------- */
 
 /* --------------- /social-items --------------- */
+
 @media (min-width: 1024px) {
+    /* --------------- works --------------- */
+      .works{
+        display: block;
+    }
+    /* --------------- /works --------------- */
+    /* --------------- site --------------- */
+    .site{
+        max-width: 1024px;
+    }
+    .site__footer-layout{
+        display: block;
+    }
+    /* --------------- /site --------------- */
+    /* --------------- desktop-title --------------- */
     .desktop-title{
         width: 700px;
         display: block;
     }
-    .works{
-        display: block;
+    .sell{
+        width: 700px;
+        font-size:39px;
+        margin-top: 13px;
+        letter-spacing: 1px;
     }
-    .site{max-width: 1024px;}
+    .sell_1{
+        display: none;
+    }
     .left{
         text-align: center;
         margin-left: 21px;
-        margin-top: 10px;
+        margin-top: -8px;
         display:block;
         vertical-align: top;
         width: 700px;
@@ -403,21 +486,20 @@ input.contact{
         text-align: center;
         display: block;
         vertical-align: top;
+        margin-top: 15px;
         width: 700px;
         font-size: 71px;
 
     }
+    /* --------------- /desktop-title --------------- */
+    /* --------------- circle --------------- */
     .circle-items{
-        width: 700px;
+        width: 665px;
         text-align: center;
+        margin-top: 12px;
+        margin-bottom: 19px;
     }
-        .sell{
-            width: 700px;
-            font-size:39px;
-        }
-        .sell_1{
-            display: none;
-        }
+
         .circle{
             width: 125px;
             height: 125px;
@@ -433,9 +515,11 @@ input.contact{
             padding-right: 11px;
 
         }
+    /* --------------- /circle --------------- */
     .content_block{
         width: 700px;
         display: inline-block;
+        margin-right: 21px
         float: right;
     }
 
@@ -489,6 +573,16 @@ input.contact{
         height: 95px;
         width: 260px;
     }
+    .feedback-logo {
+        position: absolute;
+        top: 22px;
+        left: 50%;
+        margin-left: -151px;
+    }
+    .feedback-logo img{
+        height: 106px;
+        width: 303px;
+    }
     /* --------------- /logo --------------- */
 
     /* --------------- save-electricity --------------- */
@@ -497,13 +591,38 @@ input.contact{
     }
     /* --------------- /save-electricity --------------- */
     /* --------------- feedback-block --------------- */
+    .feedback-title{
+        margin-top: 190px;
+        font-size: 71px;
+    }
+    .feedback-contact{
+        font-size: 64px;
+        margin-bottom: 325px;
+    }
     .feedback-block{
         display: block;
     }
     /* --------------- /feedback-block --------------- */
     /* --------------- social --------------- */
-    .social{
+    .social a{
+        display: none;
+    }
+    .social-items{
         display: none;
     }
     /* --------------- /social --------------- */
+    /* --------------- menu --------------- */
+    .menu{
+        display: block;
+        margin-top: 33px;
+    }
+    .feedback_menu{
+        text-align: center;
+        margin-top: 0;
+    }
+    .feedback_menu a{
+        font-size: 26px;
+    }
+    /* --------------- /menu --------------- */
+
 }
