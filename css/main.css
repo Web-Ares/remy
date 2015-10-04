@@ -305,8 +305,17 @@ input.contact{
 /* --------------- social --------------- */
 .social{
     position: absolute;
-    bottom: 5px;
-    left:20px;
+    bottom: 3px;
+    left: 25px;
+}
+.social a {
+    display: inline-block;
+    width:26px;
+    height: 26px;
+    background: url("../img/facebooklogo.png");
+}
+.social a:hover{
+    background-position: 0 26px;
 }
 /* --------------- /social --------------- */
 
@@ -318,6 +327,7 @@ input.contact{
     letter-spacing: 1px;
 }
 /* --------------- /feedback-title --------------- */
+
 /* --------------- feedback-contact --------------- */
 .feedback-contact{
     color:#fdd733;
