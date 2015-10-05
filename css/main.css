@@ -71,7 +71,6 @@ body{
 .site__header {
     position: relative;
 
-
 }
 .site__footer {
     z-index: 2;
@@ -80,6 +79,7 @@ body{
     right: 0;
     bottom: 0;
     height: 60px;
+    display: none;
 }
 .site__footer-layout {
     display: none;
@@ -242,6 +242,12 @@ span{
     font-size:21px;
     color: #7ec9da;
 }
+.menu__items:hover img {
+    background: url("../img/fbook_1.png");
+}
+.menu a:hover{
+    color:#0ea0c0;
+}
 .menu__items{
     display: inline-block;
 }
@@ -261,7 +267,7 @@ span{
 
 /* --------------- aside --------------- */
 aside{
-    width: 285px;
+    width: 320px;
     padding-top: 13px;
     margin: 0 auto;
 }
@@ -328,12 +334,12 @@ aside{
 form{
     margin:0 auto;
     max-width:186px;
-    margin-bottom: 11px;
+    margin-bottom: 8px;
 }
 /* --------------- /form --------------- */
 
 /* --------------- textbox --------------- */
-input.textbox{
+input.textbox,textarea.textbox{
     background-color: #c6dadc;
     font-size: 11px;
     height: 22px;
@@ -345,16 +351,16 @@ input.textbox{
     border-bottom: 2px solid #dbe7e9;
     padding: 0 8px;
 }
+textarea.height{
+    height: 39px;
+    margin-bottom: -2px;
+}
 input.company{
     display: none;
 }
 /* --------------- /textbox --------------- */
 
-/* --------------- contact --------------- */
-input.contact{
-    height: 38px;
-}
-/* --------------- contact --------------- */
+
 
 
 /* --------------- btn --------------- */
@@ -377,7 +383,7 @@ input.contact{
 }
 .social a {
     display: inline-block;
-    width:26px;
+    width:27px;
     height: 26px;
     background: url("../img/facebooklogo.png");
 }
@@ -428,7 +434,7 @@ input.contact{
     background-position: -60px 0;
 }
 .social-items .social-home{
-    background-position: 37px 0;
+    background-position: 38px 0;
 }
 .social-items .social-f:hover{
     background-position: 0 36px;
@@ -437,7 +443,7 @@ input.contact{
     background-position: -60px 36px;
 }
 .social-items .social-home:hover{
-    background-position: 37px 36px;
+    background-position: 38px 36px;
 }
 /* --------------- feedback-logo --------------- */
 .feedback-logo img{
@@ -459,6 +465,9 @@ input.contact{
         max-width: 1024px;
     }
     .site__footer-layout{
+        display: block;
+    }
+    .site__footer{
         display: block;
     }
     /* --------------- /site --------------- */
@@ -529,6 +538,7 @@ input.contact{
     /* --------------- aside --------------- */
     aside{
         float: left;
+        width: 290px;
     }
     /* --------------- aside --------------- */
 
@@ -558,11 +568,14 @@ input.contact{
         display: block;
     }
     /* --------------- /textbox --------------- */
-    /* --------------- contact --------------- */
-    input.contact{
-        height: 100px;
+
+    /* --------------- height --------------- */
+    textarea.height{
+        height: 99px;
+        font-size: 17px;
     }
-    /* --------------- contact --------------- */
+    /* --------------- /height --------------- */
+
     /* --------------- btn --------------- */
     .btn{
         border: none;
