@@ -194,7 +194,7 @@ span{
 
 /* --------------- aside --------------- */
 aside{
-    width: 285px;
+    width: 320px;
     padding-top: 13px;
     margin: 0 auto;
 }
@@ -261,12 +261,12 @@ aside{
 form{
     margin:0 auto;
     max-width:186px;
-    margin-bottom: 11px;
+    margin-bottom: 8px;
 }
 /* --------------- /form --------------- */
 
 /* --------------- textbox --------------- */
-input.textbox{
+input.textbox,textarea.textbox{
     background-color: #c6dadc;
     font-size: 11px;
     height: 22px;
@@ -278,16 +278,16 @@ input.textbox{
     border-bottom: 2px solid #dbe7e9;
     padding: 0 8px;
 }
+textarea.height{
+    height: 39px;
+    margin-bottom: -2px;
+}
 input.company{
     display: none;
 }
 /* --------------- /textbox --------------- */
 
-/* --------------- contact --------------- */
-input.contact{
-    height: 38px;
-}
-/* --------------- contact --------------- */
+
 
 
 /* --------------- btn --------------- */
@@ -461,11 +461,14 @@ input.contact{
         display: block;
     }
     /* --------------- /textbox --------------- */
-    /* --------------- contact --------------- */
-    input.contact{
-        height: 100px;
+
+    /* --------------- height --------------- */
+    textarea.height{
+        height: 99px;
+        font-size: 17px;
     }
-    /* --------------- contact --------------- */
+    /* --------------- /height --------------- */
+
     /* --------------- btn --------------- */
     .btn{
         border: none;
