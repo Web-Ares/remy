@@ -148,7 +148,8 @@ span{
     height: 65px;
     background: #76c0cc;
     border-radius: 50%;
-    padding-right: 3px;
+    padding-right: 4px;
+    padding-top: 1px;
     margin-left: 2px;
     font-size: 11px;
     text-align: center;
