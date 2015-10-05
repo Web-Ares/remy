@@ -242,6 +242,9 @@ span{
     font-size:21px;
     color: #7ec9da;
 }
+.menu a:hover{
+    color:#0ea0c0;
+}
 .menu__items{
     display: inline-block;
 }
