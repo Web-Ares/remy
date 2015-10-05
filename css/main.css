@@ -498,6 +498,9 @@ input.company{
         font-size:39px;
         margin-top: 13px;
         letter-spacing: 1px;
+
+    .works{
+        display: block;
     }
     .interest{
         display: none;
