@@ -71,7 +71,6 @@ body{
 .site__header {
     position: relative;
 
-
 }
 .site__footer {
     z-index: 2;
@@ -80,6 +79,7 @@ body{
     right: 0;
     bottom: 0;
     height: 60px;
+    display: none;
 }
 .site__footer-layout {
     display: none;
@@ -459,6 +459,9 @@ input.company{
         max-width: 1024px;
     }
     .site__footer-layout{
+        display: block;
+    }
+    .site__footer{
         display: block;
     }
     /* --------------- /site --------------- */
