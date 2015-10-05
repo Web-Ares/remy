@@ -354,7 +354,7 @@ input.textbox,textarea.textbox{
 }
 textarea.height{
     height: 39px;
-    margin-bottom: -2px;
+    margin-bottom: 0px;
 }
 input.company{
     display: none;
@@ -367,12 +367,15 @@ input.company{
 /* --------------- btn --------------- */
 .btn{
     width: 100%;
+    padding-top: 0;
+    border: none;
     background-color: #fdd733;
     font-size: 28px;
     color: #043540;
     border-top: 2px solid #fae897;
     border-bottom: 2px solid #fae897;
     height: 32px;
+    line-height: 10px;
 }
 /* --------------- /btn --------------- */
 
@@ -390,6 +393,19 @@ input.company{
 }
 .social a:hover{
     background-position: 0 26px;
+}
+.social a{
+    display: inline-block;
+    height: 27px;
+    width: 27px;
+    margin-right: 16px;
+    background: url("../img/facebooklogo.png");
+}
+.social .social-fb{
+    background-position: -3px -4px;
+}
+.social .social-fb:hover{
+    background-position: 31px -4px;
 }
 /* --------------- /social --------------- */
 
