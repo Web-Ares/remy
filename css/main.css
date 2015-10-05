@@ -118,8 +118,8 @@ span{
     font-size: 30px;
 }
 .power{
-    margin-left: 21px;
-    margin-top: 10px;
+    margin-left: 20px;
+    margin-top: 0px;
     font-weight: 700;
     display: inline-block;
     vertical-align: top;
@@ -132,6 +132,7 @@ span{
     display: inline-block;
     vertical-align: top;
     width: 215px;
+    margin-top: -16px;
     font-size: 57px;
     color:#fdd733;
 
@@ -161,6 +162,8 @@ span{
 }
 .circle-items{
     text-align: center;
+    margin-bottom: -11px;
+    margin-right: -3px;
 }
 .circle div span{
     color: #fff;
@@ -192,7 +195,7 @@ span{
     display: none;
     text-align: right;
     position: relative;
-    margin-right: -15px;
+    margin-right: 5px;
     width: 697px;
 }
 .works__item{
@@ -214,15 +217,15 @@ span{
 }
 .works_description{
     position: relative;
-    margin-top: -10px;
-    width: 204px;
+    margin-top: -15px;
+    width: 3px;
     margin-right: -3px;
     height: 54px;
     background: #dbbb2e;
 }
 .works_description div{
-    position: relative;
-    margin-top: -10px;
+    position: absolute;
+    margin-top: 6px;
     right: 3px;
     width: 204px;
     height: 54px;
@@ -494,7 +497,7 @@ input.contact{
     /* --------------- /desktop-title --------------- */
     /* --------------- circle --------------- */
     .circle-items{
-        width: 665px;
+        width: 700px;
         text-align: center;
         margin-top: 12px;
         margin-bottom: 19px;
