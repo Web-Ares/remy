@@ -493,12 +493,12 @@ input.company{
         width: 700px;
         display: block;
     }
-    .fluorescent{
+    .fluorescent {
         width: 700px;
-        font-size:39px;
+        font-size: 39px;
         margin-top: 13px;
         letter-spacing: 1px;
-
+    }
     .works{
         display: block;
     }
