@@ -385,15 +385,7 @@ input.company{
     bottom: 3px;
     left: 25px;
 }
-.social a {
-    display: inline-block;
-    width:27px;
-    height: 26px;
-    background: url("../img/facebooklogo.png");
-}
-.social a:hover{
-    background-position: 0 26px;
-}
+
 .social a{
     display: inline-block;
     height: 27px;
@@ -402,10 +394,10 @@ input.company{
     background: url("../img/facebooklogo.png");
 }
 .social .social-fb{
-    background-position: -3px -4px;
+    background-position: -2px -4px;
 }
 .social .social-fb:hover{
-    background-position: 31px -4px;
+    background-position: 29px -4px;
 }
 /* --------------- /social --------------- */
 
