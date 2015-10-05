@@ -242,6 +242,9 @@ span{
     font-size:21px;
     color: #7ec9da;
 }
+.menu__items:hover img {
+    background: url("../img/fbook_1.png");
+}
 .menu a:hover{
     color:#0ea0c0;
 }
