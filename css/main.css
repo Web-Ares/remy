@@ -272,10 +272,28 @@ aside{
     padding-top: 13px;
     margin: 0 auto;
 }
-.aside span strong{
-    color: #0ea0c0;
+
+
+/* --------------- /aside --------------- */
+
+/* --------------- feedback --------------- */
+.feedback .contact__phone {
+    color: #043540;
+    font-size: 15.2px;
+    letter-spacing: 0px;
+    word-spacing: 4px;
+    margin-bottom: 6px;
 }
-.aside .feedback-block>strong{
+
+.feedback .contact{
+    color: #fdd733;
+    font-size: 50px;
+    display: none;
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+.feedback>.contact>strong{
     color: #043540;
     font-size: 40px;
     margin: 0 auto;
@@ -284,30 +302,8 @@ aside{
     line-height: 28px;
     margin-top: -3px;
 }
-/* --------------- /aside --------------- */
 
-/* --------------- feedback --------------- */
-.feedback{
-    color: #043540;
-    font-size: 15.2px;
-    letter-spacing: 0px;
-    word-spacing: 4px;
-    margin-bottom: 6px;
-}
-/* --------------- /feedback --------------- */
-
-/* --------------- feedback-block --------------- */
-.feedback-block{
-    color: #fdd733;
-    font-size: 50px;
-    display: none;
-    text-align: center;
-    margin-bottom: 17px;
-}
-/* --------------- /feedback-block --------------- */
-
-/* --------------- save-electricity --------------- */
-.save-electricity{
+.feedback .electricity{
     color: #043540;
     font-size: 40px;
     text-align: center;
@@ -318,8 +314,12 @@ aside{
     margin-bottom: -7px;
     display: none;
 }
-/* --------------- /save-electricity --------------- */
-
+.feedback form{
+    margin:0 auto;
+    max-width:186px;
+    margin-bottom: 8px;
+}
+/* --------------- /feedback --------------- */
 /* --------------- logo --------------- */
 .logo {
     margin: 0 auto;
@@ -330,14 +330,6 @@ aside{
     width: 99px;
 }
 /* --------------- /logo --------------- */
-
-/* --------------- form --------------- */
-form{
-    margin:0 auto;
-    max-width:186px;
-    margin-bottom: 8px;
-}
-/* --------------- /form --------------- */
 
 /* --------------- textbox --------------- */
 input.textbox,textarea.textbox{
@@ -361,9 +353,6 @@ input.company{
 }
 /* --------------- /textbox --------------- */
 
-
-
-
 /* --------------- btn --------------- */
 .btn{
     width: 100%;
@@ -377,8 +366,16 @@ input.company{
     height: 32px;
     line-height: 10px;
 }
-input.btn:hover{
+button.btn:hover{
     background-color: #ffdf54;
+}
+.btn .start{
+    display: none;
+    font-size: 50px;
+}
+.btn .economy{
+    display: block;
+
 }
 /* --------------- /btn --------------- */
 
@@ -559,18 +556,21 @@ input.btn:hover{
     /* --------------- aside --------------- */
 
     /* --------------- feedback --------------- */
-    .feedback{
+    .feedback .contact__phone{
         display: none;
     }
-    /* --------------- /feedback --------------- */
-
-    /* --------------- form --------------- */
-    form{
+    .feedback .electricity{
+        display: block;
+    }
+    .feedback form{
         margin:0 auto;
         max-width:228px;
         margin-bottom: 51px;
     }
-    /* --------------- /form --------------- */
+    .feedback .contact{
+        display: block;
+    }
+    /* --------------- /feedback --------------- */
 
     /* --------------- textbox --------------- */
     input.textbox{
@@ -599,6 +599,13 @@ input.btn:hover{
         border-right: 2px solid #fae897;
         height: 43px;
     }
+    .btn .start{
+        display: block;
+    }
+    .btn .economy{
+        display: none;
+        font-size: 50px;
+    }
     /* --------------- /btn --------------- */
     /* --------------- logo --------------- */
     .logo img{
@@ -617,11 +624,6 @@ input.btn:hover{
     }
     /* --------------- /logo --------------- */
 
-    /* --------------- save-electricity --------------- */
-    .save-electricity{
-        display: block;
-    }
-    /* --------------- /save-electricity --------------- */
     /* --------------- feedback-block --------------- */
     .feedback-title{
         margin-top: 190px;
@@ -631,9 +633,7 @@ input.btn:hover{
         font-size: 64px;
         margin-bottom: 325px;
     }
-    .feedback-block{
-        display: block;
-    }
+
     /* --------------- /feedback-block --------------- */
     /* --------------- social --------------- */
     .social a{
