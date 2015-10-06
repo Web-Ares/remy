@@ -403,6 +403,7 @@ input.company{
     border-bottom: 2px solid #fae897;
     height: 32px;
     line-height: 10px;
+    letter-spacing: -1px;
 }
 button.btn:hover{
     background-color: #ffdf54;
