@@ -86,13 +86,13 @@ body{
     width: 100%;
     height: 60px;
 }
-.site__content-wrap{
+.site__content__feedback{
     padding-top: 114px;
 }
 /* --------------- /site --------------- */
 
 /* --------------- desktop-title --------------- */
-.desktop-title{
+.lamp__desktop-title{
     color: #0ea0c0;
     margin-top: 5px;
     margin-bottom: 16px;
@@ -101,25 +101,27 @@ body{
     font-weight: 700;
     display: none;
 }
-span{
+h2{
     text-align: center;
     display: block;
     font-weight: 700;
 }
-.fluorescent{
+span{display: block;
+    font-weight: 700;
+}
+.lamp__fluorescent{
     margin-top: 7px;
-    line-height: 19px;
+    line-height: 25px;
     color: #0ea0c0;
     font-size: 20px;
 }
-.interest{
+.lamp__interest{
     color: #043540;
     line-height: 25px;
     font-size: 30px;
 }
-.power{
+.lamp__power{
     margin-left: 20px;
-    margin-top: 0px;
     font-weight: 700;
     display: inline-block;
     vertical-align: top;
@@ -127,20 +129,19 @@ span{
     font-size: 23px;
     color: #fdd733;
 }
-.savings{
+.lamp__savings{
     font-weight: 700;
     display: inline-block;
     vertical-align: top;
     width: 215px;
-    margin-top: -16px;
     font-size: 57px;
     color:#fdd733;
 
 }
 /* --------------- /desktop-title --------------- */
 
-/* --------------- circle --------------- */
-.circle{
+/* --------------- excellence --------------- */
+.excellence__items{
     display: inline-block;
     vertical-align: top;
     position: relative;
@@ -154,26 +155,26 @@ span{
     font-size: 11px;
     text-align: center;
 }
-.circle div{
+.excellence__items div{
     right:4px;
     width: 65px;
     height: 65px;
     background: #0ea0c0;
     border-radius: 50%;
 }
-.circle-items{
+.excellence{
     text-align: center;
     margin-bottom: -11px;
     margin-right: -3px;
 }
-.circle div span{
+.excellence__items div span{
     color: #fff;
     width: 60px;
     height: 64px;
     display: table-cell;
     vertical-align: middle;
 }
-/* --------------- /circle --------------- */
+/* --------------- /excellence --------------- */
 
 /* --------------- works --------------- */
 .works span {
@@ -207,7 +208,7 @@ span{
 .works__item:first-child{
     margin-right: 0;
 }
-.works_item span{
+.works__item span{
     text-align: right;
     font-size:15px;
 }
@@ -216,7 +217,7 @@ span{
     font-size: 21px;
     font-weight: 700;
 }
-.works_description{
+.works__description{
     position: relative;
     margin-top: -15px;
     width: 3px;
@@ -224,7 +225,7 @@ span{
     height: 54px;
     background: #dbbb2e;
 }
-.works_description div{
+.works__description div{
     position: absolute;
     margin-top: 6px;
     right: 3px;
@@ -294,6 +295,19 @@ aside{
     word-spacing: 4px;
     margin-bottom: 6px;
 }
+.feedback-title{
+    color:#0ea0c0;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.feedback-contact{
+    color:#fdd733;
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 58px;
+}
 /* --------------- /feedback --------------- */
 
 /* --------------- feedback-block --------------- */
@@ -361,9 +375,6 @@ input.company{
 }
 /* --------------- /textbox --------------- */
 
-
-
-
 /* --------------- btn --------------- */
 .btn{
     width: 100%;
@@ -404,25 +415,6 @@ input.btn:hover{
 }
 /* --------------- /social --------------- */
 
-/* --------------- feedback-title --------------- */
-.feedback-title{
-    color:#0ea0c0;
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-/* --------------- /feedback-title --------------- */
-
-/* --------------- feedback-contact --------------- */
-.feedback-contact{
-    color:#fdd733;
-    font-size: 33px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 58px;
-}
-
-/* --------------- /feedback-contact --------------- */
 /* --------------- social-items --------------- */
 .social-items{
     position: relative;
@@ -458,12 +450,12 @@ input.btn:hover{
 .social-items .social-home:hover{
     background-position: 83px 88px;
 }
-/* --------------- feedback-logo --------------- */
-.feedback-logo img{
+/* --------------- logo_feedback --------------- */
+.logo_feedback img{
     height: 57px;
     width: 156px;
 }
-/* --------------- /feedback-logo --------------- */
+/* --------------- /logo_feedback --------------- */
 
 /* --------------- /social-items --------------- */
 
@@ -484,12 +476,19 @@ input.btn:hover{
         display: block;
     }
     /* --------------- /site --------------- */
-    /* --------------- desktop-title --------------- */
-    .desktop-title{
+    /* --------------- lamp --------------- */
+    .lamp{
+        width: 700px;
+        display: inline-block;
+        margin-right: 21px;
+        float: right;
+    }
+
+    .lamp__desktop-title{
         width: 700px;
         display: block;
     }
-    .fluorescent {
+    .lamp__fluorescent {
         width: 700px;
         font-size: 39px;
         margin-top: 13px;
@@ -498,10 +497,10 @@ input.btn:hover{
     .works{
         display: block;
     }
-    .interest{
+    .lamp__interest{
         display: none;
     }
-    .power{
+    .lamp__power{
         text-align: center;
         margin-left: 21px;
         margin-top: -8px;
@@ -510,46 +509,39 @@ input.btn:hover{
         width: 700px;
         font-size: 51px;
     }
-    .savings {
+    .lamp__savings {
         text-align: center;
         display: block;
         vertical-align: top;
         margin-top: 15px;
         width: 700px;
         font-size: 71px;
-
     }
-    /* --------------- /desktop-title --------------- */
-    /* --------------- circle --------------- */
-    .circle-items{
+    /* --------------- /lamp --------------- */
+    /* --------------- excellence --------------- */
+    .excellence{
         width: 700px;
         text-align: center;
         margin-top: 12px;
         margin-bottom: 19px;
     }
 
-    .circle{
+    .excellence__items{
         width: 125px;
         height: 125px;
         font-size: 20px;
     }
-    .circle div{
+    .excellence__items div{
         width: 125px;
         height: 125px;
     }
-    .circle div span{
+    .excellence__items div span{
         height: 120px;
         width: 108px;
         padding-right: 11px;
 
     }
-    /* --------------- /circle --------------- */
-    .content_block{
-        width: 700px;
-        display: inline-block;
-        margin-right: 21px;
-        float: right;
-    }
+    /* --------------- /excellence --------------- */
 
     /* --------------- aside --------------- */
     aside{
@@ -605,13 +597,13 @@ input.btn:hover{
         height: 95px;
         width: 260px;
     }
-    .feedback-logo {
+    .logo_feedback {
         position: absolute;
         top: 22px;
         left: 50%;
         margin-left: -151px;
     }
-    .feedback-logo img{
+    .logo_feedback img{
         height: 106px;
         width: 303px;
     }
@@ -648,11 +640,11 @@ input.btn:hover{
         display: block;
         margin-top: 33px;
     }
-    .feedback_menu{
+    .menu_feedback{
         text-align: center;
         margin-top: 0;
     }
-    .feedback_menu a{
+    .menu_feedback a{
         font-size: 26px;
     }
     /* --------------- /menu --------------- */
