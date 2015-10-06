@@ -51,6 +51,8 @@
 /* --------------- /fonts --------------- */
 body{
     font-family: 'AlmoniDLAAA', 'sans-serif';
+    background: url("../img/mainbg.jpg")no-repeat center;
+    background-size: cover;
 
 }
 /* --------------- site --------------- */
@@ -61,7 +63,7 @@ body{
     overflow: hidden;
     position: relative;
     z-index: 1;
-    background: url("../img/mainbg.jpg")no-repeat center;
+
     background-size: cover;
 }
 .site__content {
