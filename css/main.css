@@ -79,6 +79,7 @@ body{
 .site__content__feedback{
     padding-top: 114px;
 }
+
 /* --------------- /site --------------- */
 
 /* --------------- desktop-title --------------- */
@@ -347,19 +348,6 @@ aside{
 }
 /* --------------- /feedback-block --------------- */
 
-/* --------------- save-electricity --------------- */
-.save-electricity{
-    color: #043540;
-    font-size: 40px;
-    text-align: center;
-    width: 200px;
-    margin: 0 auto;
-    line-height: 32px;
-    letter-spacing: 2px;
-    margin-bottom: -7px;
-    display: none;
-}
-/* --------------- /save-electricity --------------- */
 
 /* --------------- logo --------------- */
 .logo {
