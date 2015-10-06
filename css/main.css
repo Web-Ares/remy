@@ -277,33 +277,40 @@ aside{
 /* --------------- /aside --------------- */
 
 /* --------------- feedback --------------- */
-.feedback .contact__phone {
+.feedback{
     color: #043540;
     font-size: 15.2px;
     letter-spacing: 0px;
     word-spacing: 4px;
     margin-bottom: 6px;
 }
+.feedback-title{
+    color:#0ea0c0;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.feedback-contact{
+    color:#fdd733;
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 58px;
+}
+/* --------------- /feedback --------------- */
 
-.feedback .contact{
+/* --------------- feedback-block --------------- */
+.feedback-block{
     color: #fdd733;
     font-size: 50px;
     display: none;
     text-align: center;
     margin-bottom: 17px;
 }
+/* --------------- /feedback-block --------------- */
 
-.feedback>.contact>strong{
-    color: #043540;
-    font-size: 40px;
-    margin: 0 auto;
-    display: block;
-    width: 196px;
-    line-height: 28px;
-    margin-top: -3px;
-}
-
-.feedback .electricity{
+/* --------------- save-electricity --------------- */
+.save-electricity{
     color: #043540;
     font-size: 40px;
     text-align: center;
@@ -314,12 +321,8 @@ aside{
     margin-bottom: -7px;
     display: none;
 }
-.feedback form{
-    margin:0 auto;
-    max-width:186px;
-    margin-bottom: 8px;
-}
-/* --------------- /feedback --------------- */
+/* --------------- /save-electricity --------------- */
+
 /* --------------- logo --------------- */
 .logo {
     margin: 0 auto;
@@ -330,6 +333,14 @@ aside{
     width: 99px;
 }
 /* --------------- /logo --------------- */
+
+/* --------------- form --------------- */
+form{
+    margin:0 auto;
+    max-width:186px;
+    margin-bottom: 8px;
+}
+/* --------------- /form --------------- */
 
 /* --------------- textbox --------------- */
 input.textbox,textarea.textbox{
@@ -353,6 +364,9 @@ input.company{
 }
 /* --------------- /textbox --------------- */
 
+
+
+
 /* --------------- btn --------------- */
 .btn{
     width: 100%;
@@ -366,16 +380,8 @@ input.company{
     height: 32px;
     line-height: 10px;
 }
-button.btn:hover{
+input.btn:hover{
     background-color: #ffdf54;
-}
-.btn .start{
-    display: none;
-    font-size: 50px;
-}
-.btn .economy{
-    display: block;
-
 }
 /* --------------- /btn --------------- */
 
@@ -556,21 +562,18 @@ button.btn:hover{
     /* --------------- aside --------------- */
 
     /* --------------- feedback --------------- */
-    .feedback .contact__phone{
+    .feedback{
         display: none;
     }
-    .feedback .electricity{
-        display: block;
-    }
-    .feedback form{
+    /* --------------- /feedback --------------- */
+
+    /* --------------- form --------------- */
+    form{
         margin:0 auto;
         max-width:228px;
         margin-bottom: 51px;
     }
-    .feedback .contact{
-        display: block;
-    }
-    /* --------------- /feedback --------------- */
+    /* --------------- /form --------------- */
 
     /* --------------- textbox --------------- */
     input.textbox{
@@ -599,13 +602,6 @@ button.btn:hover{
         border-right: 2px solid #fae897;
         height: 43px;
     }
-    .btn .start{
-        display: block;
-    }
-    .btn .economy{
-        display: none;
-        font-size: 50px;
-    }
     /* --------------- /btn --------------- */
     /* --------------- logo --------------- */
     .logo img{
@@ -624,6 +620,11 @@ button.btn:hover{
     }
     /* --------------- /logo --------------- */
 
+    /* --------------- save-electricity --------------- */
+    .save-electricity{
+        display: block;
+    }
+    /* --------------- /save-electricity --------------- */
     /* --------------- feedback-block --------------- */
     .feedback-title{
         margin-top: 190px;
@@ -633,7 +634,9 @@ button.btn:hover{
         font-size: 64px;
         margin-bottom: 325px;
     }
-
+    .feedback-block{
+        display: block;
+    }
     /* --------------- /feedback-block --------------- */
     /* --------------- social --------------- */
     .social a{
@@ -656,7 +659,5 @@ button.btn:hover{
         font-size: 26px;
     }
     /* --------------- /menu --------------- */
-
-
 
 }
