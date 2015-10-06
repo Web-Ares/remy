@@ -7,25 +7,15 @@
 /*
     main styles
     version: 04.10.2015
-
     placeholder
-
     fonts
-
     site
-
     works
-
-    excellence
-
+    circle
     menu
-
     aside
-
     feedback
-
     social
-
     logo
 */
 
@@ -86,13 +76,13 @@ body{
     width: 100%;
     height: 60px;
 }
-.site__content__feedback{
+.site__content-wrap{
     padding-top: 114px;
 }
 /* --------------- /site --------------- */
 
 /* --------------- desktop-title --------------- */
-.lamp__desktop-title{
+.desktop-title{
     color: #0ea0c0;
     margin-top: 5px;
     margin-bottom: 16px;
@@ -101,27 +91,25 @@ body{
     font-weight: 700;
     display: none;
 }
-h2{
+span{
     text-align: center;
     display: block;
     font-weight: 700;
 }
-span{display: block;
-    font-weight: 700;
-}
-.lamp__fluorescent{
+.fluorescent{
     margin-top: 7px;
-    line-height: 25px;
+    line-height: 19px;
     color: #0ea0c0;
     font-size: 20px;
 }
-.lamp__interest{
+.interest{
     color: #043540;
     line-height: 25px;
     font-size: 30px;
 }
-.lamp__power{
+.power{
     margin-left: 20px;
+    margin-top: 0px;
     font-weight: 700;
     display: inline-block;
     vertical-align: top;
@@ -129,19 +117,20 @@ span{display: block;
     font-size: 23px;
     color: #fdd733;
 }
-.lamp__savings{
+.savings{
     font-weight: 700;
     display: inline-block;
     vertical-align: top;
     width: 215px;
+    margin-top: -16px;
     font-size: 57px;
     color:#fdd733;
 
 }
 /* --------------- /desktop-title --------------- */
 
-/* --------------- excellence --------------- */
-.excellence__items{
+/* --------------- circle --------------- */
+.circle{
     display: inline-block;
     vertical-align: top;
     position: relative;
@@ -155,26 +144,26 @@ span{display: block;
     font-size: 11px;
     text-align: center;
 }
-.excellence__items div{
+.circle div{
     right:4px;
     width: 65px;
     height: 65px;
     background: #0ea0c0;
     border-radius: 50%;
 }
-.excellence{
+.circle-items{
     text-align: center;
     margin-bottom: -11px;
     margin-right: -3px;
 }
-.excellence__items div span{
+.circle div span{
     color: #fff;
     width: 60px;
     height: 64px;
     display: table-cell;
     vertical-align: middle;
 }
-/* --------------- /excellence --------------- */
+/* --------------- /circle --------------- */
 
 /* --------------- works --------------- */
 .works span {
@@ -208,7 +197,7 @@ span{display: block;
 .works__item:first-child{
     margin-right: 0;
 }
-.works__item span{
+.works_item span{
     text-align: right;
     font-size:15px;
 }
@@ -217,7 +206,7 @@ span{display: block;
     font-size: 21px;
     font-weight: 700;
 }
-.works__description{
+.works_description{
     position: relative;
     margin-top: -15px;
     width: 3px;
@@ -225,7 +214,7 @@ span{display: block;
     height: 54px;
     background: #dbbb2e;
 }
-.works__description div{
+.works_description div{
     position: absolute;
     margin-top: 6px;
     right: 3px;
@@ -273,10 +262,28 @@ aside{
     padding-top: 13px;
     margin: 0 auto;
 }
-.aside span strong{
-    color: #0ea0c0;
+
+
+/* --------------- /aside --------------- */
+
+/* --------------- feedback --------------- */
+.feedback .contact__phone {
+    color: #043540;
+    font-size: 15.2px;
+    letter-spacing: 0px;
+    word-spacing: 4px;
+    margin-bottom: 6px;
 }
-.aside .feedback-block>strong{
+
+.feedback .contact{
+    color: #fdd733;
+    font-size: 50px;
+    display: none;
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+.feedback>.contact>strong{
     color: #043540;
     font-size: 40px;
     margin: 0 auto;
@@ -285,43 +292,8 @@ aside{
     line-height: 28px;
     margin-top: -3px;
 }
-/* --------------- /aside --------------- */
 
-/* --------------- feedback --------------- */
-.feedback{
-    color: #043540;
-    font-size: 15.2px;
-    letter-spacing: 0px;
-    word-spacing: 4px;
-    margin-bottom: 6px;
-}
-.feedback-title{
-    color:#0ea0c0;
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-.feedback-contact{
-    color:#fdd733;
-    font-size: 33px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 58px;
-}
-/* --------------- /feedback --------------- */
-
-/* --------------- feedback-block --------------- */
-.feedback-block{
-    color: #fdd733;
-    font-size: 50px;
-    display: none;
-    text-align: center;
-    margin-bottom: 17px;
-}
-/* --------------- /feedback-block --------------- */
-
-/* --------------- save-electricity --------------- */
-.save-electricity{
+.feedback .electricity{
     color: #043540;
     font-size: 40px;
     text-align: center;
@@ -332,8 +304,12 @@ aside{
     margin-bottom: -7px;
     display: none;
 }
-/* --------------- /save-electricity --------------- */
-
+.feedback form{
+    margin:0 auto;
+    max-width:186px;
+    margin-bottom: 8px;
+}
+/* --------------- /feedback --------------- */
 /* --------------- logo --------------- */
 .logo {
     margin: 0 auto;
@@ -344,14 +320,6 @@ aside{
     width: 99px;
 }
 /* --------------- /logo --------------- */
-
-/* --------------- form --------------- */
-form{
-    margin:0 auto;
-    max-width:186px;
-    margin-bottom: 8px;
-}
-/* --------------- /form --------------- */
 
 /* --------------- textbox --------------- */
 input.textbox,textarea.textbox{
@@ -388,8 +356,16 @@ input.company{
     height: 32px;
     line-height: 10px;
 }
-input.btn:hover{
+button.btn:hover{
     background-color: #ffdf54;
+}
+.btn .start{
+    display: none;
+    font-size: 50px;
+}
+.btn .economy{
+    display: block;
+
 }
 /* --------------- /btn --------------- */
 
@@ -415,6 +391,25 @@ input.btn:hover{
 }
 /* --------------- /social --------------- */
 
+/* --------------- feedback-title --------------- */
+.feedback-title{
+    color:#0ea0c0;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+/* --------------- /feedback-title --------------- */
+
+/* --------------- feedback-contact --------------- */
+.feedback-contact{
+    color:#fdd733;
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 58px;
+}
+
+/* --------------- /feedback-contact --------------- */
 /* --------------- social-items --------------- */
 .social-items{
     position: relative;
@@ -450,12 +445,12 @@ input.btn:hover{
 .social-items .social-home:hover{
     background-position: 83px 88px;
 }
-/* --------------- logo_feedback --------------- */
-.logo_feedback img{
+/* --------------- feedback-logo --------------- */
+.feedback-logo img{
     height: 57px;
     width: 156px;
 }
-/* --------------- /logo_feedback --------------- */
+/* --------------- /feedback-logo --------------- */
 
 /* --------------- /social-items --------------- */
 
@@ -476,19 +471,12 @@ input.btn:hover{
         display: block;
     }
     /* --------------- /site --------------- */
-    /* --------------- lamp --------------- */
-    .lamp{
-        width: 700px;
-        display: inline-block;
-        margin-right: 21px;
-        float: right;
-    }
-
-    .lamp__desktop-title{
+    /* --------------- desktop-title --------------- */
+    .desktop-title{
         width: 700px;
         display: block;
     }
-    .lamp__fluorescent {
+    .fluorescent {
         width: 700px;
         font-size: 39px;
         margin-top: 13px;
@@ -497,10 +485,10 @@ input.btn:hover{
     .works{
         display: block;
     }
-    .lamp__interest{
+    .interest{
         display: none;
     }
-    .lamp__power{
+    .power{
         text-align: center;
         margin-left: 21px;
         margin-top: -8px;
@@ -509,39 +497,46 @@ input.btn:hover{
         width: 700px;
         font-size: 51px;
     }
-    .lamp__savings {
+    .savings {
         text-align: center;
         display: block;
         vertical-align: top;
         margin-top: 15px;
         width: 700px;
         font-size: 71px;
+
     }
-    /* --------------- /lamp --------------- */
-    /* --------------- excellence --------------- */
-    .excellence{
+    /* --------------- /desktop-title --------------- */
+    /* --------------- circle --------------- */
+    .circle-items{
         width: 700px;
         text-align: center;
         margin-top: 12px;
         margin-bottom: 19px;
     }
 
-    .excellence__items{
+    .circle{
         width: 125px;
         height: 125px;
         font-size: 20px;
     }
-    .excellence__items div{
+    .circle div{
         width: 125px;
         height: 125px;
     }
-    .excellence__items div span{
+    .circle div span{
         height: 120px;
         width: 108px;
         padding-right: 11px;
 
     }
-    /* --------------- /excellence --------------- */
+    /* --------------- /circle --------------- */
+    .content_block{
+        width: 700px;
+        display: inline-block;
+        margin-right: 21px;
+        float: right;
+    }
 
     /* --------------- aside --------------- */
     aside{
@@ -551,18 +546,21 @@ input.btn:hover{
     /* --------------- aside --------------- */
 
     /* --------------- feedback --------------- */
-    .feedback{
+    .feedback .contact__phone{
         display: none;
     }
-    /* --------------- /feedback --------------- */
-
-    /* --------------- form --------------- */
-    form{
+    .feedback .electricity{
+        display: block;
+    }
+    .feedback form{
         margin:0 auto;
         max-width:228px;
         margin-bottom: 51px;
     }
-    /* --------------- /form --------------- */
+    .feedback .contact{
+        display: block;
+    }
+    /* --------------- /feedback --------------- */
 
     /* --------------- textbox --------------- */
     input.textbox{
@@ -591,30 +589,31 @@ input.btn:hover{
         border-right: 2px solid #fae897;
         height: 43px;
     }
+    .btn .start{
+        display: block;
+    }
+    .btn .economy{
+        display: none;
+        font-size: 50px;
+    }
     /* --------------- /btn --------------- */
     /* --------------- logo --------------- */
     .logo img{
         height: 95px;
         width: 260px;
     }
-
-    .logo_feedback {
+    .feedback-logo {
         position: absolute;
         top: 22px;
         left: 50%;
         margin-left: -151px;
     }
-    .logo_feedback img{
+    .feedback-logo img{
         height: 106px;
         width: 303px;
     }
     /* --------------- /logo --------------- */
 
-    /* --------------- save-electricity --------------- */
-    .save-electricity{
-        display: block;
-    }
-    /* --------------- /save-electricity --------------- */
     /* --------------- feedback-block --------------- */
     .feedback-title{
         margin-top: 190px;
@@ -624,9 +623,7 @@ input.btn:hover{
         font-size: 64px;
         margin-bottom: 325px;
     }
-    .feedback-block{
-        display: block;
-    }
+
     /* --------------- /feedback-block --------------- */
     /* --------------- social --------------- */
     .social a{
@@ -641,11 +638,11 @@ input.btn:hover{
         display: block;
         margin-top: 33px;
     }
-    .menu_feedback{
+    .feedback_menu{
         text-align: center;
         margin-top: 0;
     }
-    .menu_feedback a{
+    .feedback_menu a{
         font-size: 26px;
     }
     /* --------------- /menu --------------- */
