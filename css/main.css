@@ -71,22 +71,20 @@
 /* --------------- /fonts --------------- */
 body{
     font-family: 'AlmoniDLAAA', 'sans-serif';
-
-}
+    }
 /* --------------- site --------------- */
-
-.site{
+.site {
+    position: relative;
     background: url("../img/mainbg.jpg")no-repeat center;
     background-size: cover;
+
 }
-.site__wrap {
-    min-height: 100%;
+.site__wrap{
     max-width: 320px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
     z-index: 1;
-
 }
 .site__content {
     position: relative;
@@ -150,7 +148,6 @@ span{display: block;
 }
 .lamp__power{
     margin-left: 20px;
-    font-weight: 700;
     display: inline-block;
     vertical-align: top;
     width: 80px;
@@ -159,7 +156,6 @@ span{display: block;
     font-family: "almoni-black",sans-serif;
 }
 .lamp__savings{
-    font-weight: 700;
     display: inline-block;
     vertical-align: top;
     width: 215px;
@@ -342,7 +338,7 @@ aside{
     font-size: 40px;
     margin: 0 auto;
     display: block;
-    width: 200px;
+    width: 196px;
     line-height: 28px;
     margin-top: -3px;
     font-family: "almoni-bold",sans-serif;
@@ -378,13 +374,15 @@ aside{
 .feedback-title{
     color:#0ea0c0;
     font-size: 36px;
-    font-family: "atlas-black",sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 .feedback-contact{
     color:#fdd733;
     font-size: 33px;
+    font-weight: 700;
+    letter-spacing: 1px;
     margin-bottom: 58px;
-    font-family: "almoni-black",sans-serif;
 }
 /* --------------- /feedback --------------- */
 
@@ -495,7 +493,7 @@ button.btn:hover{
 .social-items{
     position: relative;
     width: 160px;
-    margin: 0 auto 88px;
+    margin: 0 auto 94px;
 }
 .social-items a {
     display: inline-block;
@@ -542,7 +540,7 @@ button.btn:hover{
     }
     /* --------------- /works --------------- */
     /* --------------- site --------------- */
-    .site__wrap{
+    .site{
         max-width: 1024px;
     }
     .site__footer-layout{
