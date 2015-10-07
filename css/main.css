@@ -149,11 +149,12 @@ span{
     font-family: "almoni-bold",sans-serif;
 }
 .lamp__power{
-    margin-left: 32px;
+    margin-left: 20px;
     font-weight: 700;
     display: inline-block;
     vertical-align: top;
-    width: 68px;
+    width: 80px;
+    text-align: center;
     font-size: 23px;
     color: #fdd733;
     font-family: "almoni-black",sans-serif;
