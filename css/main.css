@@ -71,14 +71,17 @@
 /* --------------- /fonts --------------- */
 body{
     font-family: 'AlmoniDLAAA', 'sans-serif';
-    background: url("../img/mainbg.jpg")top center;
-    background-size: cover;
 
 }
 /* --------------- site --------------- */
-.site {
+
+.site{
+    background: url("../img/mainbg.jpg")no-repeat center;
+    background-size: cover;
+}
+.site__wrap {
     min-height: 100%;
-    min-width: 320px;
+    max-width: 320px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -339,7 +342,7 @@ aside{
     font-size: 40px;
     margin: 0 auto;
     display: block;
-    width: 196px;
+    width: 200px;
     line-height: 28px;
     margin-top: -3px;
     font-family: "almoni-bold",sans-serif;
@@ -375,15 +378,13 @@ aside{
 .feedback-title{
     color:#0ea0c0;
     font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-family: "atlas-black",sans-serif;
 }
 .feedback-contact{
     color:#fdd733;
     font-size: 33px;
-    font-weight: 700;
-    letter-spacing: 1px;
     margin-bottom: 58px;
+    font-family: "almoni-black",sans-serif;
 }
 /* --------------- /feedback --------------- */
 
@@ -494,7 +495,7 @@ button.btn:hover{
 .social-items{
     position: relative;
     width: 160px;
-    margin: 0 auto 94px;
+    margin: 0 auto 88px;
 }
 .social-items a {
     display: inline-block;
@@ -541,7 +542,7 @@ button.btn:hover{
     }
     /* --------------- /works --------------- */
     /* --------------- site --------------- */
-    .site{
+    .site__wrap{
         max-width: 1024px;
     }
     .site__footer-layout{
