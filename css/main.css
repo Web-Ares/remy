@@ -33,22 +33,52 @@
 
 /* --------------- fonts --------------- */
 @font-face {
-    font-family: "Font Name";
-    src: url("fonts/almoni-dl-aaa-700 (1).woff") format("woff");
+    font-family: "atlas-black";
+    src: url("fonts/atlas-aaa-black_0.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "almoni-bold";
+    src: url("fonts/almoni-dl-aaa-bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "almoni-black";
+    src: url("fonts/almoni-dl-aaa-black.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "almoni-light";
+    src: url("fonts/almoni-dl-aaa-light.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "almoni-regular";
+    src: url("fonts/almoni-dl-aaa-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "atlas-regular";
+    src: url("fonts/atlas-aaa-regular_0.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 /* --------------- /fonts --------------- */
 body{
     font-family: 'AlmoniDLAAA', 'sans-serif';
-    background: url("../img/mainbg.jpg")no-repeat center;
+    background: url("../img/mainbg.jpg")top center;
     background-size: cover;
 
 }
 /* --------------- site --------------- */
 .site {
     min-height: 100%;
-    max-width: 320px;
+    min-width: 320px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -92,6 +122,7 @@ body{
     font-size: 58px;
     font-weight: 700;
     display: none;
+    font-family: "atlas-black",sans-serif;
 }
 h2{
     text-align: center;
@@ -106,11 +137,13 @@ span{display: block;
     line-height: 25px;
     color: #0ea0c0;
     font-size: 20px;
+    font-family: "almoni-bold",sans-serif;
 }
 .lamp__interest{
     color: #043540;
     line-height: 25px;
     font-size: 30px;
+    font-family: "almoni-bold",sans-serif;
 }
 .lamp__power{
     margin-left: 20px;
@@ -120,6 +153,7 @@ span{display: block;
     width: 80px;
     font-size: 23px;
     color: #fdd733;
+    font-family: "almoni-black",sans-serif;
 }
 .lamp__savings{
     font-weight: 700;
@@ -128,6 +162,7 @@ span{display: block;
     width: 215px;
     font-size: 57px;
     color:#fdd733;
+    font-family: "almoni-black",sans-serif;
 
 }
 /* --------------- /desktop-title --------------- */
@@ -146,6 +181,7 @@ span{display: block;
     margin-left: 2px;
     font-size: 11px;
     text-align: center;
+    font-family: "almoni-bold",sans-serif;
 }
 .excellence__items div{
     right:4px;
@@ -165,6 +201,7 @@ span{display: block;
     height: 64px;
     display: table-cell;
     vertical-align: middle;
+
 }
 /* --------------- /excellence --------------- */
 
@@ -203,11 +240,12 @@ span{display: block;
 .works__item span{
     text-align: right;
     font-size:15px;
+    font-family: "almoni-regular",sans-serif;
 }
 .works__item h3{
     color:#fdd733;
     font-size: 21px;
-    font-weight: 700;
+    font-family: "atlas-black",sans-serif;
 }
 .works__description{
     position: relative;
@@ -235,6 +273,7 @@ span{display: block;
 .menu a{
     font-size:21px;
     color: #7ec9da;
+    font-family: "almoni-regular",sans-serif;
 }
 .menu__items:hover img {
     background: url("../img/fbook_1.png");
@@ -276,6 +315,7 @@ aside{
     word-spacing: 4px;
     margin-bottom: 6px;
     text-align: center;
+    font-family: "almoni-black",sans-serif;
 }
 .feedback-wrap .contact__phone> strong{
     color:#0ea0c0;
@@ -286,9 +326,15 @@ aside{
     display: none;
     text-align: center;
     margin-bottom: 17px;
+    font-family: "almoni-black",sans-serif;
+}
+.feedback-wrap .contact .phone{
+    font-family: "almoni-black",sans-serif;
+    color: #fdd733;
+    font-size: 50px;
 }
 
-.feedback-wrap>.contact>strong{
+.feedback-wrap>.contact>span{
     color: #043540;
     font-size: 40px;
     margin: 0 auto;
@@ -296,6 +342,7 @@ aside{
     width: 196px;
     line-height: 28px;
     margin-top: -3px;
+    font-family: "almoni-bold",sans-serif;
 }
 
 .feedback-wrap .electricity{
@@ -308,6 +355,7 @@ aside{
     letter-spacing: 2px;
     margin-bottom: -7px;
     display: none;
+    font-family: "almoni-bold",sans-serif;
 }
 .feedback-wrap form{
     margin:0 auto;
@@ -381,6 +429,7 @@ input.textbox,textarea.textbox{
     border-top: 2px solid #dbe7e9;
     border-bottom: 2px solid #dbe7e9;
     padding: 0 8px;
+    font-family: "almoni-light",sans-serif;
 }
 textarea.height{
     height: 39px;
@@ -404,6 +453,7 @@ input.company{
     height: 32px;
     line-height: 10px;
     letter-spacing: -1px;
+    font-family: "almoni-black",sans-serif;
 }
 button.btn:hover{
     background-color: #ffdf54;
@@ -512,12 +562,14 @@ button.btn:hover{
     .lamp__desktop-title{
         width: 700px;
         display: block;
+        font-family: "atlas-black",sans-serif;
     }
     .lamp__fluorescent {
         width: 700px;
         font-size: 39px;
         margin-top: 13px;
         letter-spacing: 1px;
+        font-family: "almoni-bold",sans-serif;
     }
     .works{
         display: block;
@@ -533,6 +585,7 @@ button.btn:hover{
         vertical-align: top;
         width: 700px;
         font-size: 51px;
+
     }
     .lamp__savings {
         text-align: center;
@@ -541,6 +594,7 @@ button.btn:hover{
         margin-top: 15px;
         width: 700px;
         font-size: 71px;
+
     }
     /* --------------- /lamp --------------- */
     /* --------------- excellence --------------- */
@@ -555,6 +609,7 @@ button.btn:hover{
         width: 125px;
         height: 125px;
         font-size: 20px;
+        font-family: "almoni-bold",sans-serif;
     }
     .excellence__items div{
         width: 125px;
@@ -594,6 +649,9 @@ button.btn:hover{
         margin-bottom: 51px;
     }
     .feedback-wrap .contact{
+        display: block;
+    }
+    .feedback-wrap .contact .phone{
         display: block;
     }
     /* --------------- /feedback-wrap --------------- */
