@@ -92,6 +92,7 @@ body{
 .site__content {
     position: relative;
     z-index: 2;
+
 }
 .site__header {
     position: relative;
