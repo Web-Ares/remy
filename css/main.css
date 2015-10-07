@@ -120,21 +120,20 @@ body{
 /* --------------- desktop-title --------------- */
 .lamp__desktop-title{
     color: #0ea0c0;
-    margin-top: 5px;
-    margin-bottom: 16px;
-    letter-spacing: 3px;
+    margin-top: 10px;
     font-size: 58px;
-    font-weight: 700;
+    letter-spacing: -1px;
     display: none;
     font-family: "atlas-black",sans-serif;
 }
 h2{
     text-align: center;
     display: block;
-    font-weight: 700;
 }
-span{display: block;
-    font-weight: 700;
+span{
+    display: block;
+    margin-top: -2px;
+
 }
 .lamp__fluorescent{
     margin-top: 7px;
@@ -150,24 +149,23 @@ span{display: block;
     font-family: "almoni-bold",sans-serif;
 }
 .lamp__power{
-    margin-left: 20px;
+    margin-left: 32px;
     font-weight: 700;
     display: inline-block;
     vertical-align: top;
-    width: 80px;
+    width: 68px;
     font-size: 23px;
     color: #fdd733;
     font-family: "almoni-black",sans-serif;
 }
 .lamp__savings{
-    font-weight: 700;
     display: inline-block;
     vertical-align: top;
     width: 215px;
     font-size: 57px;
-    color:#fdd733;
+    color: #fdd733;
+    line-height: 44px;
     font-family: "almoni-black",sans-serif;
-
 }
 /* --------------- /desktop-title --------------- */
 
@@ -180,9 +178,8 @@ span{display: block;
     height: 65px;
     background: #76c0cc;
     border-radius: 50%;
-    padding-right: 4px;
+    padding-right: 3px;
     padding-top: 1px;
-    margin-left: 2px;
     font-size: 11px;
     text-align: center;
     font-family: "almoni-bold",sans-serif;
@@ -196,8 +193,9 @@ span{display: block;
 }
 .excellence{
     text-align: center;
+    margin-top: 6px;
     margin-bottom: -11px;
-    margin-right: -3px;
+    margin-right: -13px;
 }
 .excellence__items div span{
     color: #fff;
@@ -230,7 +228,7 @@ span{display: block;
     display: none;
     text-align: right;
     position: relative;
-    margin-right: 5px;
+    margin-right:2px;
     width: 697px;
 }
 .works__item{
@@ -249,6 +247,7 @@ span{display: block;
 .works__item h3{
     color:#fdd733;
     font-size: 21px;
+    margin-bottom: -9px;
     font-family: "atlas-black",sans-serif;
 }
 .works__description{
@@ -305,7 +304,7 @@ span{display: block;
 /* --------------- aside --------------- */
 aside{
     width: 320px;
-    padding-top: 13px;
+    padding-top: 16px;
     margin: 0 auto;
 }
 
@@ -364,7 +363,7 @@ aside{
 .feedback-wrap form{
     margin:0 auto;
     max-width:186px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 /* --------------- /feedback-wrap --------------- */
 
@@ -538,6 +537,9 @@ button.btn:hover{
 
 @media (min-width: 1024px) {
     /* --------------- works --------------- */
+    span{
+        margin-top: 7px;
+    }
     .works{
         display: block;
     }
@@ -562,15 +564,12 @@ button.btn:hover{
     }
 
     .lamp__desktop-title{
-        width: 700px;
         display: block;
-        font-family: "atlas-black",sans-serif;
     }
     .lamp__fluorescent {
         width: 700px;
         font-size: 39px;
-        margin-top: 13px;
-        letter-spacing: 1px;
+        margin-top: 10px;
         font-family: "almoni-bold",sans-serif;
     }
     .works{
@@ -582,7 +581,8 @@ button.btn:hover{
     .lamp__power{
         text-align: center;
         margin-left: 21px;
-        margin-top: -8px;
+        margin-top: 4px;
+        letter-spacing: 1px;
         display:block;
         vertical-align: top;
         width: 700px;
@@ -593,7 +593,7 @@ button.btn:hover{
         text-align: center;
         display: block;
         vertical-align: top;
-        margin-top: 15px;
+        margin-top: 26px;
         width: 700px;
         font-size: 71px;
 
@@ -603,8 +603,9 @@ button.btn:hover{
     .excellence{
         width: 700px;
         text-align: center;
+        margin-right: -1px;
         margin-top: 12px;
-        margin-bottom: 19px;
+        margin-bottom: 21px;
     }
 
     .excellence__items{
@@ -688,6 +689,7 @@ button.btn:hover{
     }
     .btn .start{
         display: block;
+        margin-top: -5px;
     }
     .btn .economy{
         display: none;
@@ -701,7 +703,7 @@ button.btn:hover{
     }
     .logo_feedback {
         position: absolute;
-        top: 22px;
+        top: 42px;
         left: 50%;
         margin-left: -151px;
     }
@@ -718,7 +720,7 @@ button.btn:hover{
     /* --------------- /save-electricity --------------- */
     /* --------------- feedback-block --------------- */
     .feedback-title{
-        margin-top: 190px;
+        margin-top: 215px;
         font-size: 71px;
     }
     .feedback-contact{
@@ -739,12 +741,16 @@ button.btn:hover{
     /* --------------- /social --------------- */
     /* --------------- menu --------------- */
     .menu{
+        width: 700px;
+        text-align: center;
+        margin-right: 10px;
         display: block;
         margin-top: 33px;
     }
     .menu_feedback{
+        width: 100%;
         text-align: center;
-        margin-top: 0;
+        margin-top: -3px;
     }
     .menu_feedback a{
         font-size: 26px;
