@@ -78,6 +78,7 @@ body{
 .site{
     background: url("../img/mainbg.jpg")no-repeat center;
     background-size: cover;
+    min-height: 100%;
 }
 .site__wrap {
     min-height: 100%;
@@ -86,8 +87,8 @@ body{
     overflow: hidden;
     position: relative;
     z-index: 1;
-
 }
+
 .site__content {
     position: relative;
     z-index: 2;
